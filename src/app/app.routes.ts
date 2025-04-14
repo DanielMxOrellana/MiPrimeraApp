@@ -19,8 +19,13 @@ export const routes: Routes = [
   },
   {
     path: 'bienvenida',
-    loadComponent: () => import('./pages/bienvenida/bienvenida.page').then( m => m.BienvenidaPage)
+    loadComponent: () => import('./pages/bienvenida/bienvenida.page').then(m => m.BienvenidaPage)
+  },
+  {
+    path: 'perfil',
+    loadComponent: () => import('./perfil/perfil.page').then(m => m.PerfilPage)
   }
+  
 ];
 
 export const appRouter = provideRouter(routes);
